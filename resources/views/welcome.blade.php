@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
-@section('title','Laravel Comics')
+@section('title','Laravel trains')
 
 @section('main-content')
     <h1>
-        Laravel Comics
+        Laravel trains
     </h1>
 @endsection
