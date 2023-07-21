@@ -14,6 +14,6 @@ use App\Http\Controllers\guest\TrainController as guestTrainController;
 |
 */
 
-Route::get('/', [guestPageController::class, 'home']);
-Route::get('/trains', [guestTrainController::class, 'index']);
+Route::get('/', [guestPageController::class, 'home'])->name('guest.home');
+Route::get('/trains', [guestTrainController::class, 'index'])->name('guest.train.index');
 
