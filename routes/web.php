@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\guest\PageController as guestPageController;
+use App\Http\Controllers\guest\TrainController as guestTrainController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [guestPageController::class, 'home']);
+Route::get('/trains', [guestTrainController::class, 'index']);
+
